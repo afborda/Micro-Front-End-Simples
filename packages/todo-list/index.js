@@ -1,10 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
-import vueLifecycle from "single-spa-vue";
+import singleSpaVue from "single-spa-vue";
 
 Vue.config.productionTip = false;
 
-const vueLifecycles = vueLifecycle({
+const vueLifecycles = singleSpaVue({
   vue,
   appOptions: {
     render: (h) => h(App),
