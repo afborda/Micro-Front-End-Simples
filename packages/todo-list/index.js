@@ -5,7 +5,7 @@ import singleSpaVue from "single-spa-vue";
 Vue.config.productionTip = false;
 
 const vueLifecycles = singleSpaVue({
-  vue,
+  Vue,
   appOptions: {
     render: (h) => h(App),
   },
