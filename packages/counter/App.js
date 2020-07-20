@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import img from "./assets/source.gif";
 import "./App.css";
 
 function App() {
@@ -13,10 +14,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src={img} alt="logo React" />
         <h1>Abner Fonseca React!</h1>
         <h3>Counter: {counter}</h3>
-        <button onClick={handleDecrement}>Decrement</button>
-        <button onClick={handleIncrement}>Increment</button>
+        <button onClick={handleDecrement}>Decrement ( - )</button>
+        <button onClick={handleIncrement}>Increment ( + )</button>
       </header>
     </div>
   );

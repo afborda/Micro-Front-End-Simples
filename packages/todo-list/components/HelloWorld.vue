@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <img src="../assets/vue.png" width="300" height="300" alt="logo" />
     <h1>{{ msg }}</h1>
     <form @submit.prevent="add()">
       <input v-model="task" type="text" />
@@ -23,6 +24,12 @@ export default {
       tasks: []
     };
   },
+  images: [
+    {
+      url: "../assets/vue.png",
+      name: "Vue"
+    }
+  ],
   methods: {
     add() {
       if (this.task.trim()) {
